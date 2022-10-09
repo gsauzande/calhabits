@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import { Col, Row } from "antd";
+import React from "react";
 import "./Square.css";
-import { useEffect } from "react";
 
 type Props = {
   id: number;
@@ -11,7 +9,6 @@ type Props = {
 export const Square = ({ id, onSquareClick, selected }: Props) => {
   const handleClick = () => {
     onSquareClick(id, !selected);
-    console.log(id, !selected);
   };
 
   return (
