@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Input, Row, Select, Typography } from "antd";
 import { Square } from "./components/Square";
 export const Home = () => {
