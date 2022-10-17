@@ -34,13 +34,14 @@ export const Home = () => {
 
   return (
     <>
+      <br />
       <Row>
         <Col span={12} offset={6}>
-          <Typography.Title level={2}>Life Calendar</Typography.Title>
+          <Typography.Title level={1}>Life Calendar</Typography.Title>
         </Col>
 
         <Col span={12} offset={6}>
-          Years:{" "}
+          {"Amount of years you'd like to count"}:{" "}
           <InputNumber
             min={1}
             max={90}
@@ -52,8 +53,46 @@ export const Home = () => {
       </Row>
       <Row>
         <Col span={12} offset={6}>
+          <Typography.Text strong underline>
+            {" "}
+            ☢️ DISCLAIMER ☢️
+          </Typography.Text>
+          <br />
           <Typography.Text italic strong>
-            Each row represents a week.
+            If you {"won't"}{" "}
+            <Typography.Link>make this page your homepage</Typography.Link> then
+            this website {"isn't"} for you.
+          </Typography.Text>
+          <br />
+          <Typography.Text italic strong>
+            This website is for people like me that MUST look at their goal
+            EVERY.SINGLE.DAY in order to not get lazy or procrastinate.
+          </Typography.Text>
+
+          <Typography.Title level={5}>Usage</Typography.Title>
+          <Typography.Text>
+            <i>Step 1 - </i>
+            <strong>
+              Click on a square every day you do something(tiny or big) to reach
+              your goal
+            </strong>
+          </Typography.Text>
+          <br />
+          <Typography.Text>
+            <i>Step 2 - </i> <strong>Close the page and GET 💩 DONE</strong>
+          </Typography.Text>
+        </Col>
+      </Row>
+      <Row>
+        <Col span={12} offset={6}>
+          <Typography.Text italic type="secondary">
+            This 1996-looking website was created by{" "}
+            <Typography.Link
+              href="https://www.instagram.com/easysoftwaredeveloper/"
+              target="_blank"
+            >
+              Gásten Sauzande
+            </Typography.Link>
           </Typography.Text>
         </Col>
       </Row>
