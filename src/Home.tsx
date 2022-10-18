@@ -37,7 +37,9 @@ export const Home = () => {
       <br />
       <Row>
         <Col span={12} offset={6}>
-          <Typography.Title level={1}>Life Calendar</Typography.Title>
+          <Typography.Title level={1}>
+            Calhabits - Life Calendar
+          </Typography.Title>
         </Col>
 
         <Col span={12} offset={6}>
@@ -60,8 +62,13 @@ export const Home = () => {
           <br />
           <Typography.Text italic strong>
             If you {"won't"}{" "}
-            <Typography.Link>make this page your homepage</Typography.Link> then
-            this website {"isn't"} for you.
+            <Typography.Link
+              href="https://www.lifewire.com/set-homepage-3483132"
+              target="_blank"
+            >
+              make this page your homepage
+            </Typography.Link>{" "}
+            then this website {"isn't"} for you.
           </Typography.Text>
           <br />
           <Typography.Text italic strong>
