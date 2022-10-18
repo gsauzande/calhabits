@@ -38,6 +38,12 @@ export const Home = () => {
       <Row>
         <Col span={12} offset={6}>
           <Typography.Title level={1}>
+            <img
+              src="/logo512.png"
+              alt="Calhabits Life Calendar logo"
+              width="50px"
+              style={{ marginTop: "-7px", paddingRight: "10px" }}
+            />
             Calhabits - Life Calendar
           </Typography.Title>
         </Col>
