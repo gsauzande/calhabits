@@ -36,31 +36,28 @@ export const Home = () => {
     <>
       <br />
       <Row>
-        <Col span={12} offset={6}>
+        <Col
+          md={{ span: 12, offset: 6 }}
+          xs={{ span: 19, offset: 1 }}
+          offset={6}
+        >
           <Typography.Title level={1}>
             <img
               src="/logo512.png"
               alt="Calhabits Life Calendar logo"
-              width="50px"
+              width="40px"
               style={{ marginTop: "-7px", paddingRight: "10px" }}
             />
             Calhabits - Life Calendar
           </Typography.Title>
         </Col>
-
-        <Col span={12} offset={6}>
-          {"Amount of years you'd like to count"}:{" "}
-          <InputNumber
-            min={1}
-            max={90}
-            style={{ width: "100px" }}
-            value={years}
-            onChange={onYearsChange}
-          />
-        </Col>
       </Row>
       <Row>
-        <Col span={12} offset={6}>
+        <Col
+          md={{ span: 12, offset: 6 }}
+          xs={{ span: 19, offset: 1 }}
+          offset={6}
+        >
           <Typography.Text strong underline>
             {" "}
             ☢️ DISCLAIMER ☢️
@@ -81,6 +78,12 @@ export const Home = () => {
             This website is for people like me that MUST look at their goal
             EVERY.SINGLE.DAY in order to not get lazy or procrastinate.
           </Typography.Text>
+          <br />
+          <Typography.Text italic strong>
+            💻 &nbsp;By the way, this looks waaaay better on a big screen.{" "}
+            <br />I mean, {"it's"} still not beautiful, but {"it's"} better than
+            on a phone.
+          </Typography.Text>
 
           <Typography.Title level={5}>Usage</Typography.Title>
           <Typography.Text>
@@ -97,7 +100,27 @@ export const Home = () => {
         </Col>
       </Row>
       <Row>
-        <Col span={12} offset={6}>
+        <Col
+          md={{ span: 12, offset: 6 }}
+          xs={{ span: 19, offset: 1 }}
+          offset={6}
+        >
+          {"Amount of years you'd like to count"}:{" "}
+          <InputNumber
+            min={1}
+            max={90}
+            style={{ width: "100px" }}
+            value={years}
+            onChange={onYearsChange}
+          />
+        </Col>
+      </Row>
+      <Row>
+        <Col
+          md={{ span: 12, offset: 6 }}
+          xs={{ span: 19, offset: 1 }}
+          offset={6}
+        >
           <Typography.Text italic type="secondary">
             This 1996-looking website was created by{" "}
             <Typography.Link
@@ -110,7 +133,11 @@ export const Home = () => {
         </Col>
       </Row>
       <Row>
-        <Col span={12} offset={6}>
+        <Col
+          md={{ span: 12, offset: 6 }}
+          xs={{ span: 19, offset: 1 }}
+          offset={6}
+        >
           {Array.from(Array(squares).keys()).map((id: number) => {
             const currentDay = id + 1;
             return (
